@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>Pig Latin</title>
+	</head>
+	<body>
+		<div class="header">
+			<h2>Classical Ciphers</h2>
+		</div>
+
+		<div class="topnav" id="mainTopnav">
+			<a href="index.html"><b>Home</b></a>
+			<a href="rot13.html">ROT-13</a>
+			<a href="caesar.html">Caesar</a>
+			<a href="morse.html">Morse</a>
+			<a href="piglatin.html" class="active">Pig Latin</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h3>Pig Latin (Igpay Atinlay)</h3>
+				<p>Pig Latin is a cipher in which words are altered to be unrecognisable to those who do not know the rules. In Pig Latin:</p>
+				<ul>
+					<li>Words that begin with consonant sounds, have all the letters before the initial vowel placed at the end of the word sequence and then "ay" is added to the end.</li>
+					<li>Words that begin with vowel sounds just have "way" "ay" or "yay" added to the end ("yay" is used on this page)</li>
+				</ul>
+			</div>
+			
+			<div class="column">
+				<div id="piglatin-input">
+					<h3>Try it yourself:</h3>
+					<p>Enter your text below to encode text using Pig Latin:</p>
+					<textarea rows="1" cols="50" autofocus id="piglatinmessage"></textarea></br></br>
+					<button type="button" onClick="pigLatinEncode()" id="encode_button">Encode</button>
+				</div>
+		
+				<div id="piglatin-output">
+					<p>
+					This is your encoded message:<br/>
+					<p class="output" id="piglatin-output-text"></p>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>ROT-13 Cipher</title>
+	</head>
+	<body>
+		<div class="header">
+			<h2>Classical Ciphers</h2>
+		</div>
+
+		<div class="topnav" id="mainTopnav">
+			<a href="index.html"><b>Home</b></a>
+			<a href="rot13.html" class="active">ROT-13</a>
+			<a href="caesar.html"> Caesar</a>
+			<a href="morse.html">Morse</a>
+			<a href="piglatin.html">Pig Latin</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h3>ROT-13</h3>
+				<p>ROT-13, which stands for "rotate by 13 places" is a simple cipher that replaces a letter wit the 13th letter after it in the alphabet. Because there are 26 characters in the alphabet the same algorithm is applied for encoding and decoding. <a href="https://en.wikipedia.org/wiki/ROT13">Read more here.</a></p>
+			</div>
+			
+			<div class="column">
+				<div id="rot13-input">
+					<h3>Try it yourself:</h3>
+					<p>Enter your text below to encode or decode text using ROT-13:</p>
+					<textarea rows="1" cols="50" autofocus id="message"></textarea></br></br>
+					<button type="button" onClick="rotEncode()" id="encode_button">Encode/Decode</button>
+				</div>
+		
+				<div id="rot13-output">
+					<p>
+					This is your encoded message:<br/>
+					<p class="output" id="rot13-output-text"></p>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>Caesar Cipher</title>
+	</head>
+	<body>
+		<div class="header">
+			<h2>Classical Ciphers</h2>
+		</div>
+		<div class="topnav" id="mainTopnav">
+			<a href="index.html"><b>Home</b></a>
+			<a href="rot13.html">ROT-13</a>
+			<a href="caesar.html" class="active"> Caesar</a>
+			<a href="morse.html">Morse</a>
+			<a href="piglatin.html">Pig Latin</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h3>Caesar Cipher</h3>
+				<p>The Caesar cipher cipher is named after Julius Caesar who used it (with a key of 3) to protext messages of military significance. Although Caesar's was the first recorded use of this ciper there are other substitution ciphers known to have been used earlier. <a href="https://en.wikipedia.org/wiki/Caesar_cipher">Read more here.</a></p>
+				<div class="row">
+					<div class="column">
+						<img src="images/caesarcipher.png">
+					</div>
+					<div class="column">						
+						<p>The cipher works by replacing a letter with another letter x number of places after or before it in the alphabet as shown by the diagram to the left. The number of places a letter is shifted by is known as the key. This cipher is not very secure as it would take a maximum 25 attempts to crack the message.</p>
+					</div>
+				</div>
+				Image Source: <a href="https://en.wikipedia.org/wiki/Caesar_cipher#/media/File:Caesar_cipher_left_shift_of_3.svg">Wikipedia</a>
+			</div>
+			<div class="column">		
+				<div id="caeser-input">
+					<h3>Try it yourself:</h3>
+					<p>Enter your text below to encode text using Caesar:</p>
+					<textarea rows="1" cols="50" autofocus id="caesarmessage"></textarea></br></br>
+				</div>
+		
+				<div id="caesar-key-input">
+					<p>
+					<p>Enter your key below (any number between 1 and 26):</p>
+					<textarea rows="1" cols="50" autofocus id="caesarkey"></textarea></br></br>
+					<button type="button" onClick="caesarEncode()" id="encode_button">Encode</button>
+					</p>
+				</div>
+		
+				<div id="caesar-output">
+					<p>
+					This is your encoded message:<br/>
+					<p class="output" id="caesar-output-text"></p>
+					</p>
+					</br>
+					</br>
+				</div>
+			
+				<div id="caeser-decode-input">
+					<p>Enter your text below to decode text using Caesar:</p>
+					<textarea rows="1" cols="50" autofocus id="caesardecodemessage"></textarea></br></br>
+				</div>
+		
+				<div id="caesar-decode-key-input">
+					<p>
+					<p>Enter your decoding key below:</p>
+					<textarea rows="1" cols="50" autofocus id="caesardecodekey"></textarea></br></br>
+					<button type="button" onClick="caesarDecode()" id="encode_button">Decode</button>
+					</p>
+				</div>
+		
+				<div id="caesar-decode-output">
+					<p>
+					This is your decoded message:<br/>
+					<p class="output" id="caesar-decode-output-text"></p>
+					</p>
+				</div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>Morse</title>
+	</head>
+	<body>
+		<div class="header">
+			<h2>Classical Ciphers</h2>
+		</div>
+
+		<div class="topnav" id="mainTopnav">
+			<a href="index.html"><b>Home</b></a>
+			<a href="rot13.html">ROT-13</a>
+			<a href="caesar.html">Caesar</a>
+			<a href="morse.html" class="active">Morse</a>
+			<a href="piglatin.html">Pig Latin</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h3>Morse Code</h3>
+				<p>Despite it's name, Morse Code is technically a cipher that turns a message into a sequences of "dots" and "dashes". It was developed in 1836 for use with electrical telegraph systems. <a href="https:/en.wikipedia.org/wiki/Morse_code">Read more here.</a></p>
+				<div class="row">
+					<div class="column">
+						<img src="images/telegraphKey.jpg">
+					</div>
+					<div class="column">						
+						<p>A telegraph key like this one would be used to send morse code messages and were produced in huge quantities in WWII. The signal is "on" when the knob is pressed, and "off" when it is released. Length and timing of the dots and dashes are entirely controlled by the telegraphist.</p>
+					</div>
+				</div>
+				Image Source: <a href="https://en.wikipedia.org/wiki/Morse_code#/media/File:J38TelegraphKey.jpg">Wikipedia</a>
+			</div>
+			<div class="column">
+				<div id="morse-input">
+					<h3>Try it yourself:</h3>
+					<p>Enter your text below to encode text using Morse:</p>
+					<textarea rows="1" cols="50" autofocus id="morsemessage"></textarea></br></br>
+					<button type="button" onClick="morseEncode()" id="encode_button">Encode</button>
+				</div>
+		
+				<div id="morse-output">
+					<p>
+					This is your encoded message:<br/>
+					<p class="output" id="morse-output-text"></p>
+					</p>
+				</div>
+
+				<div id="morse-decode-input">
+					<p>Enter your text below to decode Morse code into UTF:</p>
+					<textarea rows="1" cols="50" autofocus id="morsedecodemessage"></textarea></br></br>
+					<button type="button" onClick="morseDecode()" id="encode_button">Decode</button>
+				</div>
+		
+				<div id="morse-decode-output">
+					<p>
+					This is your encoded message:<br/>
+					<p class="output" id="morse-decode-output-text"></p>
+					</p>
+				</div>
+			</div>
+	</body>
+</html>
